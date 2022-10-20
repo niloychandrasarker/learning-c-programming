@@ -1,25 +1,12 @@
-#include <stdio.h>  
-int main()  
-{  
-   int rows;  // variable declaration  
-   int columns; // variable declaration  
-   int k=1; // variable initialization  
-   printf("Enter the number of rows :");  // input the number of rows.  
-   scanf("%d",&rows);  
-   printf("\nEnter the number of columns :"); // input the number of columns.  
-   scanf("%d",&columns);  
-      int a[rows][columns]; //2d array declaration  
-      int i=1;  
-   while(i<=rows) // outer loop  
-   {  
-       int j=1;  
-      while(j<=columns)  // inner loop  
-       {  
-           printf("%d\t",k);  // printing the value of k.  
-           k++;   // increment counter  
-           j++;  
-       }  
-       i++;  
-       printf("\n");  
-   }  
-}  
+#include<stdio.h>  
+int main(){  
+int i=1;//initializing a local variable       
+//starting a loop from 1 to 10    
+for(i=1;i<=10;i++){      
+if(i==5){//if value of i is equal to 5, it will continue the loop    
+break;    
+}    
+printf("%d \n",i);    
+}//end of for loop    
+return 0;  
+}    
